@@ -1,0 +1,564 @@
+/*  Спецификация  */
+@font-face {
+    font-family: 'Gill Sans MT';
+    src: url('../fonts/GillSansMT.eot');
+    src: url('../fonts/GillSansMT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GillSansMT.woff2') format('woff2'),
+        url('../fonts/GillSansMT.woff') format('woff'),
+        url('../fonts/GillSansMT.ttf') format('truetype'),
+        url('../fonts/GillSansMT.svg#GillSansMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gill Sans MT';
+    src: url('../fonts/GillSansMT-Bold.eot');
+    src: url('../fonts/GillSansMT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GillSansMT-Bold.woff2') format('woff2'),
+        url('../fonts/GillSansMT-Bold.woff') format('woff'),
+        url('../fonts/GillSansMT-Bold.ttf') format('truetype'),
+        url('../fonts/GillSansMT-Bold.svg#GillSansMT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+	font-family: 'Gill Sans MT';	
+	font-size: 16px;
+	font-weight: normal;
+
+}
+
+button,
+button:hover,
+button:focus {
+	font-family: inherit;
+	outline: none;
+	border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	color: #242f51;
+	line-height: 1.2em;
+	font-family: 'Gill Sans MT';
+}
+
+p {
+	color: #8c8f94;;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #26272d;
+}
+
+a:hover {
+	text-decoration: none;
+}
+.btn{
+	border-radius: 29px;
+	background: #7BAFFD;
+	font-weight: bold;
+	padding: 17px 0;
+	display: block;
+	max-width: 170px;
+	text-align: center;
+	transition: background 1s ease;
+}
+.btn:hover{
+	transition: background 1s ease;
+	background: #B7D4FF;
+	color: #fff;
+	box-shadow: 0 8px 20px rgb(37 0 249 / 25%);
+}
+.btn:active{
+	transition: background 0.5s ease;
+	color: #000000;
+	box-shadow: none;
+}
+
+/*Первая секция*/
+.header{
+	background: url("../img/header.jpg") no-repeat center top;
+	padding-top: 25px;
+
+}
+nav{
+	display: flex;
+	align-items: center;
+
+}
+.burger{
+	background: url("../img/Menu_Icon.png");
+
+	width: 20px;
+	height: 15px;
+
+}
+.menu-item{
+	margin-left: 40px;
+}
+.logo{
+	display: block;
+	background: url("../img/logo.svg") no-repeat center center;
+	width: 133px;
+	height: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.menu__link{
+	margin-right: 10px;
+}
+.getapp{
+	margin-right: auto;
+	padding: 6px 15px;
+	max-width: 120px;
+}
+.dowload-text::before{
+	display: block;
+	content: "";
+	background: url("../img/getapp.svg") no-repeat center bottom;
+	width: 18px;
+	height: 21px;
+	margin-right: 5px;
+}
+
+.offer{
+	text-align: center;
+	max-width: 900px;
+	margin: 50px auto 40px auto;
+
+}
+.offer-title{
+	font-size: 62px;
+}
+.offer-text{
+	max-width: 700px;
+	margin: 40px auto;
+}
+	
+.video{
+	display: flex;
+	align-items: center;
+	padding: 8px 20px;  
+	background: transparent;
+	border: 1px solid #26272d;
+    margin-left: auto;
+    margin-right: auto;
+}
+.video:hover{
+	background: #7BAFFD;
+	color: #fff;
+	box-shadow: 0 5px 20px rgb(255 255 255 / 100%);
+}
+.video:active{
+	background: #fff;
+	box-shadow: none;
+	color: #000000;
+}
+
+.video-text::after{
+	content: "";
+	background: url("../img/arrow.svg") no-repeat center center;
+	display: block;
+	width: 20px;
+	height: 24px;
+}
+.wather{
+	background: url("../img/iphone-header.svg") center no-repeat;
+	height: 465px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/*Вторая секция*/
+
+.features{
+	padding-top: 120px;
+	padding-bottom: 60px;
+}
+.options-title{
+	font-size: 26px;
+	margin-top:45px;
+	margin-bottom: 45px;
+}
+.text_decr:last-of-type{
+	margin-bottom: 0px;
+}
+.alarm{
+	padding-top: 30px;
+	padding-bottom: 20px;
+	overflow-x: hidden;
+}
+.iphone-protect{
+	background: url("../img/iphone-protect.svg") no-repeat center top;
+	background-size: 500px;
+	height: 400px;
+	margin-left: -130px;
+
+
+}
+.protect{
+	margin-top: 20px;
+	margin-bottom: 85px;
+}
+.protect__title{
+	font-size: 42px;
+	max-width: 250px;
+}
+.protect__text{
+	margin-top: 55px;
+	margin-bottom: 55px;
+	font-size: 16px;
+}
+
+.protect__btn{
+	margin-top: 65px;
+	display: inline;
+	width: auto;
+	padding: 17px 0px;
+}
+.protect__btn_first{
+	width: 200px;
+	height: 42px;
+	margin-right: 20px;
+	text-align: center;
+	background: #267df4;
+	transition: background 0.5s ease;
+}
+.protect__btn_first:hover{
+	background: #f1f1f1;
+	color: #000;
+	transition: background 0.5s ease;
+	box-shadow: none;
+}
+
+.protect__btn_first::after{
+	content: "";
+	display: block;
+	background: url("../img/arrow.svg")  ;
+	width: 13px;
+	height: 12px;
+	margin-left: 25px;
+
+}
+.protect__btn_second{
+	width: 142px;
+	height: 42px;
+	background: #f1f1f1;
+	transition: background 0.5s ease;
+}
+.protect__btn_second:hover{
+	background: #267df4;
+	transition: background 0.5s ease;
+	box-shadow: none;
+	color: #000;
+}
+
+
+/*Третья секция*/
+.location{
+	padding-top: 30px;
+	padding-bottom: 100px;
+	overflow-x: hidden;
+}
+
+.spot__title{
+	font-size: 42px;
+	min-width: 250px;
+	margin-bottom: 45px;
+}
+.spot__text{
+	font-size: 16px;
+	margin-bottom: 45px;
+}
+.partners__title{
+	font-size: 20px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.partners__icon{
+
+}
+.dropbox{
+	background: url("../img/dropbox.svg");
+	width: 125px;
+	height: 34px;
+	margin-right: 30px;
+}
+.evernote{
+	background: url("../img/evernote.svg");
+	width: 138px;
+	height: 35px;
+}
+.world-map{
+	background: url("../img/map.png") no-repeat;
+	background-size: 400px;
+	width: 600px;
+	height: 401px;
+	margin-top: 25px;
+	margin-left: 60px;
+}
+/*Футер*/
+.footer{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.menu__link-title{
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 22px;
+	letter-spacing: 1.2px;
+}
+.company__logo{
+	margin: 0px 0px 31px;
+}
+.company__text{
+	margin-top: 31px;
+	margin-bottom: 28px;
+	font-size: 14px;
+}
+.company__app{
+	background: url("../img/download.svg") no-repeat center ;
+	display: block;
+	width: 140px;
+	height: 42px;
+}
+
+
+
+
+
+
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+	.container {
+		max-width: 960px;
+	}
+	.menu-item {
+    margin-left: 25px;
+	}
+	.offer-title {
+		font-size: 40px
+	}
+	.features {
+    	padding-top: 40px;
+    	padding-bottom: 10px;
+	}
+	.alarm{
+		padding-bottom: 20px; 
+	}
+	.options-title{
+		font-size: 20px;
+	}
+	.protect__title{
+		font-size: 20px;
+	}
+	.protect__text{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.protect__btn{
+		margin-top: 65px;
+	}
+	.iphone-protect{
+		margin-left: -180px;
+	}
+	.location{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.spot__title{
+		font-size: 20px;
+	}
+	.world-map{
+		margin-left: 0px;
+	}
+	.partners__title{
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.footer{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+	.container {
+		max-width: 720px;
+	}
+	.offer-title{
+		font-size: 30px;
+	}
+	.burger{
+		margin-left: 50px;
+	}
+	.getapp{
+		display: none;
+	
+	}
+	.offer{
+		margin-bottom: 10px;
+	}
+	.offer-text{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.wather{
+	    background-size: 400px;
+	    height: 350px
+	}
+	.options-title{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.alarm{
+		padding-top: 0px;
+	}
+	.protect{
+		margin-bottom: 0px;
+	}
+	.protect__title{
+		max-width: 100%;
+	}
+	.protect__btn{
+		margin-top: 20px;
+	}
+	.iphone-protect{	
+		background-size: 400px;
+		height: 320px;
+	}
+	.spot__title{
+		margin-bottom: 20px;
+	}
+	.world-map{
+		background-size: 400px;
+		height: 320px;
+	}
+}
+
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+	.container {
+		max-width: 540px;
+	}
+	.wather{
+	    background-size: 300px;
+	    height: 280px
+	}
+	.iphone-protect{	
+		background-size: 300px;
+		height: 240px;
+	}
+	.company__text{
+		margin-bottom: 10px;
+	}
+	.spot__text{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.world-map{
+		background-size: 300px;
+		height: 240px;	
+	}
+	.footer{
+		padding-top: 0px;
+	}
+	.footer-item{
+		margin-top: 20px;
+	}
+	.footer-item{
+		justify-content: center;
+
+	}
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+	.container {
+		padding: 0 15px;
+		width: 100%
+	}
+	.offer-title{
+		font-size: 25px;
+	}
+	.offer-text{
+		font-size: 13px;
+		margin: 0px auto;
+	}
+	.video{
+		max-width: 	100%;
+		justify-content: center;
+	}
+	.wather{
+	    background-size: 250px;
+   		height: 230px;
+	}
+	.features{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.options-title{
+		font-size: 	15px;
+	}
+	.options-text{
+		font-size: 	13px;
+	}
+	.iphone-protect{
+    background-size: 250px;
+    height: 190px;
+    margin-left: auto;
+
+	}
+	.protect__title{
+		font-size: 15px;
+	}
+	.protect__btns{
+		flex-direction: column;
+	}
+	.protect__btn_first{
+		margin: 20px auto;
+		width: 100%;
+	}
+	.protect__btn_second{
+		margin: 0px auto;
+		width: 100%;
+	}
+	.dropbox{
+		margin-right: 10px
+	}
+	.world-map{
+		background-size: 250px;
+    	height: 190px;  
+}	
+
+
+/* : 0px (280px) - 320px */
+@media (max-width: 320px) {
+	.container {
+		padding: 0 15px;
+		width: 100%
+	}
+	.wather{
+		background-size: 200px;
+		height: 170px
+	}
+	.partners__icon{
+		flex-direction: column;
+		align-items: baseline;!important
+	}
+
+
+}
